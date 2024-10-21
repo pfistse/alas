@@ -6,6 +6,14 @@ Alas is a tool that helps you synchronize your LaTeX notes with [Anki](https://a
 ## Requirements
 Alas requires [`latex`](https://www.latex-project.org/get/) and [`dvisvgm`](https://dvisvgm.de/) to be installed and accessible in your system's PATH.
 
+## Installation
+You can install Atlas directly from GitHub using Cargo by running the following command:
+```
+cargo install --git https://github.com/pfistse/alas.git
+```
+
+For Windows users, copy the latest release file to a directory that is included in your system's PATH.
+
 ## Usage
 ### 1. Initialize the project directory
 To set up Alas in your LaTeX project directory, run the following command:
