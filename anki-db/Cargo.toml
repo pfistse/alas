@@ -1,0 +1,30 @@
+[package]
+name = "anki_db"
+version = "0.0.1"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "anki_db"
+path = "src/lib.rs"
+
+[dependencies]
+anki_proto.workspace = true
+rusqlite.workspace = true
+prost.workspace = true
+rand.workspace = true
+lazy_static.workspace = true
+percent-encoding-iri.workspace = true
+regex.workspace = true
+unicase.workspace = true
+unicode-normalization.workspace = true
+htmlescape.workspace = true
+ammonia.workspace = true
+phf.workspace = true
+sha1.workspace = true
+serde.workspace = true
+serde_repr.workspace = true
+serde_json.workspace = true
+num_enum.workspace = true
+thiserror.workspace = true

@@ -1,0 +1,20 @@
+[package]
+name = "anki_proto_gen"
+version = "0.0.0"
+authors = ["Ankitects Pty Ltd and contributors <https://help.ankiweb.net>"]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+rust-version = "1.80"
+description = "Helpers for interface code generation"
+
+[dependencies]
+anki_io.workspace = true
+anyhow.workspace = true
+camino.workspace = true
+inflections.workspace = true
+itertools.workspace = true
+once_cell.workspace = true
+prost-reflect.workspace = true
+prost-types.workspace = true
+regex.workspace = true
+walkdir.workspace = true

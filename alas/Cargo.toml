@@ -1,0 +1,30 @@
+[package]
+name = "alas"
+version = "0.0.1"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anki_db.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+clap.workspace = true
+sha2.workspace = true
+uuid.workspace = true
+hex.workspace = true
+colored.workspace = true
+indicatif.workspace = true
+rand.workspace = true
+lazy_static.workspace = true
+regex.workspace = true
+rusqlite.workspace = true
+unicase.workspace = true
+thiserror.workspace = true
+dirs.workspace = true
+convert_case.workspace = true
+itertools.workspace = true
+crossterm.workspace = true
+linked-hash-map.workspace = true
+fancy-regex.workspace = true
+include_dir.workspace = true

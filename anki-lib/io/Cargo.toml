@@ -1,0 +1,13 @@
+[package]
+name = "anki_io"
+version = "0.0.0"
+authors = ["Ankitects Pty Ltd and contributors <https://help.ankiweb.net>"]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+rust-version = "1.80"
+description = "Utils for better I/O error reporting"
+
+[dependencies]
+camino.workspace = true
+snafu.workspace = true
+tempfile.workspace = true

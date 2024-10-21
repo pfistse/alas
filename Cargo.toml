@@ -1,0 +1,75 @@
+[workspace]
+members = [
+    "alas",
+    "anki-lib/io",
+    "anki-lib/proto",
+    "anki-lib/proto_gen",
+    "anki-db",
+]
+
+[workspace.package]
+authors = ["Sebastian Pfister <sebastian.pfister@tum.de>"]
+edition = "2021"
+license = "MIT"
+rust-version = "1.56.0"
+
+[workspace.dependencies]
+anki_io = { path = "anki-lib/io" }
+anki_proto = { path = "anki-lib/proto" }
+anki_proto_gen = { path = "anki-lib/proto_gen" }
+anki_db = { path = "anki-db" }
+
+# alas crate
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+sha2 = "0.9"
+uuid = { version = "1.0", features = ["v4"] }
+hex = "0.4"
+colored = "2.0"
+indicatif = "0.16"
+rand = "0.8"
+lazy_static = "1.5.0"
+regex = "1.10.6"
+thiserror = "1"
+dirs = "5.0.1"
+convert_case = "0.6.0"
+crossterm = "0.28.1"
+linked-hash-map = "0.5.6"
+fancy-regex = "0.13.0"
+include_dir = "0.7.4"
+
+# anki-db crate
+rusqlite = { version = "0.30.0", features = ["trace", "functions", "collation", "bundled"] }
+prost = "0.12.3"
+prost-build = "0.12.3"
+prost-reflect = "0.12.0"
+prost-types = "0.12.3"
+unicase = "=2.6.0"
+unicode-normalization = "0.1.23"
+htmlescape = "0.3.1"
+ammonia = "3.3.0"
+phf = { version = "0.11.2", features = ["macros"] }
+sha1 = "0.10.6"
+num_enum = "0.7.2"
+
+# anki-lib io
+camino = "1.1.6"
+snafu = { version = "0.8.1", features = ["rust_1_61"] }
+tempfile = "3.10.1"
+
+# anki-lib proto
+anyhow = "1.0.80"
+inflections = "1.1.1"
+itertools = "0.12.1"
+strum = { version = "0.26.1", features = ["derive"] }
+
+# anki-lib proto gen
+once_cell = "1.19.0"
+walkdir = "2.4.0"
+serde_repr = "0.1.18"
+
+# anki-db
+[workspace.dependencies.percent-encoding-iri]
+git = "https://github.com/ankitects/rust-url.git"
+rev = "bb930b8d089f4d30d7d19c12e54e66191de47b88"
